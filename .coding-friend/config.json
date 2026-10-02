@@ -1,0 +1,16 @@
+{
+  "docsDir": "docs",
+  "language": "en",
+  "memory": {
+    "tier": "auto",
+    "embedding": {
+      "provider": "transformers"
+    },
+    "autoCapture": true,
+    "autoStart": true
+  },
+  "tdd": true,
+  "planAuto": true,
+  "autoApprove": true,
+  "disableGUIPlan": true
+}

@@ -1,0 +1,38 @@
+# configs/temporal_config.yaml
+# Cấu hình Module Lọc Thời Gian (Temporal Debounce & Sliding Window)
+
+video:
+  default_fps: 30                 # Tần số khung hình camera giám sát
+  max_unseen_frames: 15           # Số frame tối đa cho phép mất dấu đối tượng trước khi reset ID
+
+temporal_filter:
+  # Ngưỡng thời gian xác thực mặc định (giây)
+  default_duration_threshold_sec: 2.0
+
+  # Dải ngưỡng thời gian khảo sát trong Ablation Study (giây)
+  ablation_thresholds_sec:
+    - 1.0
+    - 1.5
+    - 2.0
+    - 2.5
+    - 3.0
+
+  # Hệ số dung sai: Tỷ lệ frame 'drowning' trong cửa sổ trượt để kích hoạt cảnh báo
+  # 0.85 nghĩa là trong cửa sổ trượt W = FPS * N, nếu có ít nhất 85% frames là drowning thì kích hoạt.
+  tolerance_ratio: 0.85
+
+  # Ngưỡng tin cậy của Detector ở cấp Frame-level
+  detector_conf_threshold: 0.50
+
+tracking:
+  tracker_type: "bytetrack"       # bytetrack hoặc simple_iou
+  track_high_thresh: 0.5
+  track_low_thresh: 0.1
+  new_track_thresh: 0.6
+  track_buffer: 30
+  match_thresh: 0.8
+
+alert:
+  sound_alert_enabled: false      # Bật còi báo động âm thanh
+  save_alert_snapshots: true      # Lưu ảnh chụp thời điểm kích hoạt cảnh báo
+  output_alert_dir: "experiments/alerts"

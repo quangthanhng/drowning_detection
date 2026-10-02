@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large Model Weights (Keep code only, store weights in external storage or releases)
+models/weights/*.pt
+models/weights/*.pth
+models/weights/*.onnx
+models/weights/*.engine
+*.tflite
+
+# Datasets (Raw and Processed images/videos are large, do not track)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/dataset_master/images/*
+!data/processed/dataset_master/images/.gitkeep
+data/processed/dataset_master/labels/*
+!data/processed/dataset_master/labels/.gitkeep
+data/video_testbed/videos/*
+!data/video_testbed/videos/.gitkeep
+
+# Ultralytics & Wandb logs
+runs/
+wandb/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,36 @@
+# configs/hyperparameters.yaml
+# Thiết lập siêu tham số chuẩn hóa đồng nhất cho cả 6 mô hình Baseline
+
+training:
+  epochs: 100
+  batch_size: 16
+  image_size: 640
+  device: 0               # GPU index (hoặc 'cpu', 'mps' trên Apple Silicon)
+  workers: 4
+  seed: 42                # Cố định random seed để tái lập kết quả khoa học
+
+optimization:
+  optimizer: "SGD"        # SGD hoặc AdamW
+  learning_rate_init: 0.01
+  learning_rate_final: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3.0
+  warmup_momentum: 0.8
+  warmup_bias_lr: 0.1
+
+augmentation:
+  hsv_h: 0.015            # Điều chỉnh dải màu nước
+  hsv_s: 0.7              # Điều chỉnh độ bão hòa
+  hsv_v: 0.4              # Điều chỉnh độ sáng mặt trời/ánh sáng
+  degrees: 10.0           # Xoay nhẹ góc bơi
+  translate: 0.1          # Dịch chuyển vị trí
+  scale: 0.5              # Thay đổi tỷ lệ kích thước người bơi
+  flipud: 0.0             # Không lật dọc
+  fliplr: 0.5             # Lật ngang (50%)
+  mosaic: 1.0             # Ghép 4 góc mô phỏng môi trường đông người bơi
+  mixup: 0.1              # Trộn ảnh mô phỏng sóng nước chìm nổi
+
+evaluation:
+  conf_threshold: 0.25    # Ngưỡng tin cậy tối thiểu để phát hiện
+  iou_threshold: 0.50     # Ngưỡng IoU cho Non-Maximum Suppression (NMS)

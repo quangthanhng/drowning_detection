@@ -1,0 +1,32 @@
+# Core Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Object Detection & SOTA Baselines (YOLOv8, YOLOv11, RT-DETR)
+ultralytics>=8.3.0
+
+# Computer Vision & Image Processing
+opencv-python>=4.8.0
+pillow>=10.0.0
+imagehash>=4.3.1
+albumentations>=1.3.0
+
+# Data Science & Math
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Configuration & Utilities
+pyyaml>=6.0
+tqdm>=4.65.0
+requests>=2.31.0
+
+# Swimmer Tracking & Metrics
+filterpy>=1.4.5
+lapx>=0.5.5
+
+# Interactive Demo UI
+streamlit>=1.30.0

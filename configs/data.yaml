@@ -1,0 +1,16 @@
+# configs/data.yaml
+# Cấu hình Master Dataset (Chuẩn YOLO / Ultralytics / RT-DETR)
+# Dùng chung cho toàn bộ 6 mô hình Baseline (In-Domain Benchmark)
+
+path: /Users/nguyenquangthanh/Downloads/drowning-detection/data/processed/dataset_master
+train: images/train
+val: images/val
+test: images/test
+
+# Số lớp phân loại
+nc: 2
+
+# Tên các lớp
+names:
+  0: swimming
+  1: drowning

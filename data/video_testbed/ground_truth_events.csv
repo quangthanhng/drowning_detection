@@ -1,0 +1,11 @@
+video_id,video_name,fps,total_frames,start_sec,end_sec,event_type,scenario_description
+1,true_drowning_01.mp4,30,900,12.5,24.0,true_drowning,Bé chới với quẫy đạp rồi bắt đầu chìm tại góc hồ bơi
+2,true_drowning_02.mp4,25,750,08.2,18.0,true_drowning,Bé trượt chân khỏi phao bơi và chìm dần dưới nước
+3,true_drowning_03.mp4,30,1200,21.0,33.5,true_drowning,Bé bị đuối sức ngạt nước và bất động dưới mặt nước
+4,fake_waving_01.mp4,30,600,05.0,08.0,fake_trigger,Bé đứng nước vẫy cả hai tay chào phụ huynh trên bờ
+5,fake_waving_02.mp4,30,900,14.0,17.2,fake_trigger,Hai bé vẫy tay gọi nhau trong hồ bơi
+6,fake_diving_01.mp4,25,625,06.5,09.5,fake_trigger,Bé ngụp lặn nín thở đếm số dưới đáy hồ
+7,fake_diving_02.mp4,30,900,11.0,14.5,fake_trigger,Bé lặn ngửa trượt theo mép thành hồ
+8,fake_splashing_01.mp4,30,750,03.5,07.0,fake_trigger,Nhóm bạn đạp chân té bọt nước đùa giỡn
+9,fake_splashing_02.mp4,30,600,08.0,11.5,fake_trigger,Bé vỗ hai tay xuống mặt nước tạo bọt
+10,fake_treading_01.mp4,25,500,04.0,07.5,fake_trigger,Bé tập đứng nước tại chỗ và quạt tay liên tục
