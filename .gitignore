@@ -30,8 +30,8 @@ models/weights/*.engine
 *.tflite
 
 # Datasets (Raw and Processed images/videos are large, do not track)
-data/raw/*
-!data/raw/.gitkeep
+# data/raw/*
+# !data/raw/.gitkeep
 data/processed/dataset_master/images/*
 !data/processed/dataset_master/images/.gitkeep
 data/processed/dataset_master/labels/*
